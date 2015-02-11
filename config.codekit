@@ -11,12 +11,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/app\/scripts\/main.js": {
+	"\/app\/scripts\/min\/main-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/scripts\/main.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/min\/main-min.js",
+		"inputAbbreviatedPath": "\/app\/scripts\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
