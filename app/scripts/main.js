@@ -56,8 +56,8 @@ deck = (function() {
                     deck.addCard(card);
                 }
             }
-            print(cards);
-            print("Deck built.");
+            console.log(cards);
+            console.log("Deck built.");
         },
 
         shuffle: function(numTimes) {
@@ -123,7 +123,7 @@ deck = (function() {
             } else if (numCards >= 52) {
                 throw new RangeError("The whole deck is not a hand...");
             } else if (cards.length < numCards) {
-                print("Not enough cards. Resetting deck...");
+                console.log("Not enough cards. Resetting deck...");
                 reset();
             }
 
@@ -137,7 +137,7 @@ deck = (function() {
                 $("<li>").text(temp.rank + " , " + temp.suit).appendTo(list);
                 $("body").append(list);
             }
-            print(cards.length);
+            console.log(cards.length);
 
             containsNTimes = function(arr, string, times) {
                 var counter = 0,
@@ -256,30 +256,30 @@ deck = (function() {
                 royalFlush = true;
             }
 
-            print(hand);
-            print("High card: " + highCard);
-            print("Low card: " + lowCard);
+            console.log(hand);
+            console.log("High card: " + highCard);
+            console.log("Low card: " + lowCard);
 
             if (royalFlush) {
-                print("Royal Flush!");
+                console.log("Royal Flush!");
             } else if (straightFlush) {
-                print("Straight Flush");
+                console.log("Straight Flush");
             } else if (fourOfAKind) {
-                print("Four of a Kind");
+                console.log("Four of a Kind");
             } else if (fullHouse) {
-                print("Full House");
+                console.log("Full House");
             } else if (flush) {
-                print("Flush");
+                console.log("Flush");
             } else if (straight) {
-                print("Straight");
+                console.log("Straight");
             } else if (threeOfAKind) {
-                print("Three of a Kind");
+                console.log("Three of a Kind");
             } else if (twoPair) {
-                print("Two Pair");
+                console.log("Two Pair");
             } else if (pairs) {
-                print("Pair");
+                console.log("Pair");
             } else {
-                print("Fold :(");
+                console.log("Fold :(");
             }
 
         }
@@ -296,5 +296,5 @@ $(document).ready(function() {
 reset = function() {
     deck.buildDeck();
     deck.shuffle(50);
-    print("Deck reset.");
+    console.log("Deck reset.");
 };
