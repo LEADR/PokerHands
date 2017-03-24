@@ -50,13 +50,12 @@ deck = (function() {
 
                 cards = [];
 
-            for (suit = Suit.clubs; suit <= Suit.spades; suit++) {
+            for (suit = Suit.clubs; suit <= Suit.spades ; suit++) {
                 for (rank = Rank.ace; rank <= Rank.king; rank++) {
                     card = new Card(suit, rank);
                     deck.addCard(card);
                 }
             }
-            console.log(cards);
             console.log("Deck built.");
         },
 
@@ -137,7 +136,8 @@ deck = (function() {
                 $("<li>").text(temp.rank + " , " + temp.suit).appendTo(list);
                 $("body").append(list);
             }
-            console.log(cards.length);
+            console.log("Hand dealt.");
+            console.log("Cards in deck: "+cards.length);
 
             containsNTimes = function(arr, string, times) {
                 var counter = 0,
@@ -256,7 +256,6 @@ deck = (function() {
                 royalFlush = true;
             }
 
-            console.log(hand);
             console.log("High card: " + highCard);
             console.log("Low card: " + lowCard);
 
